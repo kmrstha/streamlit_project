@@ -21,7 +21,7 @@ auto = pd.concat([auto, education], axis = 1)
 auto = auto.drop(['Gender','Education Level'],axis = 1)
 auto = auto.drop(['Male'],axis = 1)
 
-#Strat ml
+#Start ml
 # We specify this so that the train and test data set always have the same rows, respectively
 df_train, df_test = train_test_split(auto, train_size = 0.85, test_size = 0.15, random_state = 1)
 #train ml
